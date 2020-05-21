@@ -64,7 +64,7 @@ class SeaCreature extends Animal {
 
 class Shark extends Fish {
 	void info() {
-		System.out.println("I don't sing, don't walk, don't swim"); //class shark
+		System.out.println("I don't sing, don't walk, I swim"); //class shark
 		System.out.println("I am grey");
 		//sharks don't all eat other fishes
 		//sharks are not all large
