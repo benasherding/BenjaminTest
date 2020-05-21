@@ -1,5 +1,5 @@
 package com.ben.git.test;
 
-public class Rooster {
+public class Rooster extends Animal {
 
 }

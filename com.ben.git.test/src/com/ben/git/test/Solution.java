@@ -6,7 +6,7 @@ package com.ben.git.test;
 
 
 class Animal {
-	void walk() {
+	void anim() {
 		System.out.println("I am animated"); //class animal
 	}
 	
@@ -259,7 +259,9 @@ class Chicken extends Flightless_Bird{
 /*
  * class Rooster extends Chicken{
  * 
- * void sound() { System.out.println("Cock-a-doodle-doo");
+ * 
+ * 
+ * void sing() { System.out.println("Cock-a-doodle-doo");
  * System.out.println("I am a male Chicken"); }
  * 
  * 
@@ -271,19 +273,49 @@ class Chicken extends Flightless_Bird{
 
 
 
+/*
+ * class Rooster{ Rooster rooster;
+ * 
+ * void sing(rooster) { this.rooster = rooster;
+ * 
+ * 
+ * 
+ * }
+ * 
+ * 
+ * 
+ * 
+ * 
+ * }
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 public class Solution {
 	public static void main(String[] args) {
 		
 		
 		
 		Bird bird = new Bird();
-		bird.walk();
-		bird.fly();
+		bird.anim();
+		bird.wing();
 		bird.sing();
 		Duck duck = new Duck();
 		Chicken chicken = new Chicken();
-		duck.sound();
-		chicken.sound();
+		duck.sing();
+		chicken.sing();
 		
 	}
 
