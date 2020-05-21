@@ -7,16 +7,155 @@ package com.ben.git.test;
 
 class Animal {
 	void walk() {
-		System.out.println("I am walking");
+		System.out.println("I am animated"); //class animal
 	}
 	
 }
 
-class Bird extends Animal {
+
+class FarmAnimal extends Animal{
+	void info() {
+		System.out.println("I live in a farm"); //class farm animal
+	}
+	
+	
+}
+
+
+
+class Fish extends SeaCreature{
+	
+	void info() {
+		System.out.println("I don't sing, I can swim"); //classfish
+		// not all fishes don't walk
+		
+	}
+	
+	
+	
+	
+	
 	
 
-	void fly() {
-		System.out.println("I am flying");
+	
+
+}
+
+
+class SeaCreature extends Animal {
+	
+	void info() {
+		System.out.println("I live in the sea"); //class seacreature
+		//sea 
+		
+		
+	}
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+class Shark extends Fish {
+	void info() {
+		System.out.println("I don't sing, don't walk, don't swim"); //class shark
+		System.out.println("I am grey");
+		//sharks don't all eat other fishes
+		//sharks are not all large
+		
+		
+	}
+	
+	
+	
+	
+	
+}
+
+class Clownfish extends Fish {
+	
+	void info() {
+		System.out.println("I make jokes"); //class clownFish
+		System.out.println("I am small and colourful");
+		//not all clownfish are funny
+		
+		
+	}
+	
+	
+	
+	
+	
+}
+
+
+
+class Whale extends SeaCreature {
+	
+	void info() {
+		System.out.println("I am whaley"); //Class Whale
+		
+		
+	}
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+class dolphin extends Whale {
+	
+	void info() {
+		System.out.println("I am amazing"); //Class Dolphin
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+class Bird extends Animal {
+	
+	void info() {
+		
+		System.out.println("I can walk");
+		
+	}
+	
+	
+	
+	
+
+	void wing() {
+		System.out.println("I have wings");
 	}
 	
 	void sing() {
@@ -25,19 +164,80 @@ class Bird extends Animal {
 }
 
 
-class Duck extends Bird {
-	void sound() {
-		System.out.println("Quack Quack");
-		System.out.println("I can swim~");
+
+class Flightless_Bird extends Bird{
+	
+	void info() {
+		System.out.println("I cannot fly");
+	}
+	
+	
+	
+	
+}
+
+
+class Flight_Bird extends Bird{
+	
+	void info() {
+		System.out.println("I can fly");
+	}
+	
+	
+	
+	
+}
+
+
+class Swim_Bird extends Bird{
+	
+	void info() {
+		System.out.println("I am good at swimming~");
+	}
+	
+	
+	
+	
+}
+
+class Parrot extends Flight_Bird {
+	Dog woof;
+	Cat meow;
+	Rooster sound;
+	
+	
+	
+	void info() {
+		System.out.println("I am good at copy cat sounds.");
+		
+		
+		
 	}
 	
 	
 	
 }
-class Chicken extends Bird{
-	void sound() {
+
+
+
+
+
+
+
+class Duck extends Swim_Bird {
+	void info() {
+		System.out.println("I can swim~");
+	}
+	
+	void sing() {
+	System.out.println("Quack Quack");
+	}
+	
+	
+}
+class Chicken extends Flightless_Bird{
+	void sing() {
 		System.out.println("Cluck cluck");
-		System.out.println("I cannot fly");
 	}
 	
 	
